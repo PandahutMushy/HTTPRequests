@@ -11,6 +11,7 @@ function getAndPrintHTMLChunks() {
 
     response.on("data", function(data) {
       console.log("Chunk Received. Length:", data.length);
+      console.log(data + "/n");
     });
   });
 }
